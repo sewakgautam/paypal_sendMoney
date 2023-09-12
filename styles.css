@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* Rest of your CSS styles below */
+
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  /* Use Poppins font */
+}
+
+/* Global styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  /* Use Poppins font */
+}
+
+/* Existing styles above */
+
+/* Header and Navigation styles (updated) */
+.header {
+  background-color: #012984;
+  padding: 10px 0;
+  display: flex;
+  flex-direction: column;
+  /* Change direction to column for mobile */
+  align-items: center;
+  /* Center items horizontally for mobile */
+}
+
+nav {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  /* Center items horizontally for web */
+  align-items: center;
+  flex-wrap: wrap;
+  /* Allow items to wrap to the next line on mobile */
+}
+
+.logo img {
+  max-width: 150px;
+  height: auto;
+  margin: 10px;
+  padding: 10px;
+  /* margin-bottom: 10px; Add margin for spacing on mobile */
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  /* Center items horizontally for mobile */
+}
+
+.nav-links li {
+  margin-right: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+  .nav {
+    flex-direction: row;
+    /* Change direction back to row for mobile */
+  }
+
+  .logo img {
+    margin-bottom: 0;
+    /* Remove margin for spacing on mobile */
+  }
+
+  .nav-links {
+    flex-direction: row;
+    /* Display links horizontally on mobile */
+    margin-top: 10px;
+    width: 100%;
+    /* Ensure links take full width on mobile */
+    justify-content: space-between;
+    /* Add space between links on mobile */
+  }
+
+  .nav-links li {
+    margin-right: 0;
+  }
+}
+
+
+
+nav a.active {
+  color: #012984;
+  background-color: #fff;
+  padding: 8px 15px;
+  border-radius: 5px;
+}
+
+/* Payment confirmation styles */
+.payment-confirmation {
+  text-align: center;
+  max-width: 90%;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+/* Existing styles above */
+
+/* Big number styles (updated) */
+.big-number {
+  font-size: 70px;
+  /* Default font size for larger screens */
+  color: #012984;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.balance-amount {
+  font-size: 70px;
+  /* Default font size for larger screens */
+  color: #012984;
+  margin-top: 10px;
+}
+
+.dollar-sign {
+  font-size: 10px;
+  /* Default font size for larger screens */
+  color: #012984;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+  .big-number {
+    font-size: 35px;
+    /* Default font size for larger screens */
+    color: #012984;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .balance-amount {
+    font-size: 10px;
+    /* Adjust font size for smaller screens */
+  }
+
+  .dollar-sign {
+    font-size: 10px;
+    /* Adjust font size for smaller screens */
+  }
+}
+
+/* Existing styles below */
+
+
+/* Forms styles */
+.forms-card {
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.forms-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+form {
+  flex: 0 0 calc(33.33% - 10px);
+  /* Updated width */
+  text-align: center;
+  padding: 10px;
+}
+
+form label {
+  display: block;
+  font-size: 16px;
+  color: #012984;
+  margin-bottom: 10px;
+}
+
+form input,
+form select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.submit-button {
+  background-color: #012984;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+}
+
+/* Existing styles above */
+
+/* Success message styles */
+.success-message {
+  display: none;
+  text-align: center;
+  max-width: 90%;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f0f8ff;
+  /* Light blue background color */
+}
+
+.success-message img {
+  max-width: 400px;
+
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.success-text {
+  font-size: 24px;
+  color: #008000;
+  /* Green color for success text */
+}
+
+.success-message p {
+  font-size: 18px;
+  color: #012984;
+  /* Dark blue color for other text */
+}
+
+
+/* Responsive styles */
+@media (max-width: 600px) {
+  .success-message img {
+    max-width: 250px;
+
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav li {
+    margin: 10px 0;
+  }
+
+  .payment-confirmation {
+    padding: 10px;
+  }
+
+  .balance-title {
+    font-size: 20px;
+  }
+
+
+
+  .balance-subtitle {
+    font-size: 16px;
+  }
+
+  .forms-container {
+    flex-direction: column;
+  }
+
+  form {
+    flex: 0 0 100%;
+    margin-bottom: 20px;
+  }
+
+}
+
+/* Existing styles above */
+
+/* Success message styles (continued) */
+.return-button {
+  background-color: #012984;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.return-button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive styles (continued) */
+@media (max-width: 600px) {
+  /* ... (previous responsive styles) ... */
+
+  /* Responsive styles for the "Return Back" button */
+  .return-button {
+    margin-top: 10px;
+  }
+}
+
+
+/* CSS for the loading spinner */
+.loading-spinner {
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-left: 4px solid #3498db;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  animation: spin 1s linear infinite;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+/* CSS class to control spinner animation */
+.spinner-hidden {
+  animation: none; /* Disable spinner animation */
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
